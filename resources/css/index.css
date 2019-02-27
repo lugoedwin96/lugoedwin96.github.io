@@ -15,8 +15,8 @@
 
 #image {
     display: block;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -26,12 +26,6 @@
     font-size: 13px;
     padding: 0 0 10px 0;
     text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 100px;
 }
 
 .timeline-item {
@@ -52,4 +46,60 @@
 .footer {
     margin-top: 20px;
     padding: 50px;
+}
+
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.fadeIn {
+    -webkit-animation-name: 'fadeIn';
+    animation-name: 'fadeIn';
+}
+
+iframe {
+    flex-direction: row;
+    width: 100%;
+    flex: 2;
+    padding: 10px;
+    margin: 1px solid black;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+@media (max-width: 900px) {
+    .flex-container{
+        display: block;
+    }
+}
+
+.video-container {
+    flex: 3;
+    border: 1px solid black;
+    flex-direction: row;
+}
+
+.time-line-container {
+    flex-grow: 2;
 }
