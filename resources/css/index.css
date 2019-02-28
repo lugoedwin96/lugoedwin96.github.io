@@ -45,7 +45,7 @@
 
 .inspirational-quote {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footer {
@@ -87,13 +87,20 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
 }
 
 @media (max-width: 900px) {
-    .flex-container{
+    .flex-container {
         display: block;
+    }
+}
+
+@media (min-width: 901px) {
+    .time-line-container {
+        flex-grow: 2;
+        width: 20%;
     }
 }
 
@@ -104,4 +111,7 @@ iframe {
 
 .time-line-container {
     flex-grow: 2;
+    max-width: 100%;
+    align-content: center !important;
+    text-align: center !important;
 }

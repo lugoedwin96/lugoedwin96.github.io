@@ -8,31 +8,37 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/quoteSlider.css">
     <script src="resources/js/index.js"></script>
     <title>Tribute Page to David Goggins</title>
 </head>
 <body id="main" class="container-fluid">
-    <h3 id="title" class="jumbotron text-muted display-4 animated fadeIn">David Hoggins</h3>
+    <h3 id="title" class="jumbotron bg-dark text-white display-4 animated fadeIn">David Hoggins</h3>
     <h4 id="subtitle" class="display-4 animated fadeIn">The man who has been to hell on earth.</h4>
-    <div id="img-div" class="jumbotron bg-light animated fadeIn">
+    <div id="img-div" class="jumbotron bg-dark animated fadeIn">
         <img id="image" src="resources/images/david_goggins_tired.jpg" />
         <div id="img-caption">David Goggins at the HELLGATE ultra marathonin in Fincastle, VA, where he took 5th place.</div>
     </div>
     <div id="tribute-info" class="flex-container">
         <div class="time-line-container">
-            <h3 class="timeline-title display-1">A timeline of David Goggins life: </h3>
+            <p class="timeline-title lead">RACING ACHIEVEMENTS: </p>
             <ul class="list-group">
-                <li class="list-group-item timeline-item"><b>1990 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>1996 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>1999 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2001 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2005 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2007 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2009 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2010 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2013 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2016 -</b>Cras justo odio</li>
-                <li class="list-group-item timeline-item"><b>2019 -</b>Cras justo odio</li>
+                <li class="list-group-item timeline-item"><b>2016 -</b> Strolling Jim 40 Miler 04:54:15 1st place</li>
+                <li class="list-group-item timeline-item"><b>2016 -</b> Infinitus 88k 11:23:29 13th place</li>
+                <li class="list-group-item timeline-item"><b>2016 -</b> Zane Grey 50 Miler</li>
+                <li class="list-group-item timeline-item"><b>2016 -</b> Music City Ultra 50k 04:30:43 1st place</li>
+                <li class="list-group-item timeline-item"><b>2016 -</b> Zane Grey 50 Miler 11:23:29 13th place</li>
+                <li class="list-group-item timeline-item"><b>2013 -</b> Guinness World Record for 24 Hour Pullup 4,030 in 17 hrs (World Record) </li>
+                <li class="list-group-item timeline-item"><b>2009 -</b> HURT 100 Miler Endurance Run 25:28:00 4th Place</li>
+                <li class="list-group-item timeline-item"><b>2008 -</b> Kona Ironman World Championship 11:24:01</li>
+                <li class="list-group-item timeline-item"><b>2008 -</b> McNaughton 150 Miler 33:36:20 1st place</li>
+                <li class="list-group-item timeline-item"><b>2008 -</b> MiWok 100k Race 09:55:19</li>
+                <li class="list-group-item timeline-item"><b>2007 -</b> The Grapevine 48 Hour National Championships 39:00:00 (205 miles)</li>
+                <li class="list-group-item timeline-item"><b>2007 -</b> Leadville 100 22:15:36</li>
+                <li class="list-group-item timeline-item"><b>2007 -</b> Badwater Ultra Marathon 25:49:40 (3rd place)</li>
+                <li class="list-group-item timeline-item"><b>2006 -</b> Ultraman World Championship 24:41:23 (2nd place)</li>
+                <li class="list-group-item timeline-item"><b>2006 -</b> Badwater Ultra Marathon 30:18:54</li>
+                <li class="list-group-item timeline-item"><b>2005 -</b> San Diego One Day (24 Hours, 100 miles)</li>
             </ul>
         </div>
 
@@ -40,14 +46,39 @@
             <iframe width="520" height="520" src="https://www.youtube.com/embed/2d9mIQhidtc" frameborder="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
             <div id="video-caption">David Goggins in the CBS Morning Show, discussing the 40% rule and his book <i><b>Can't Hurt Me: Master Your Mind and Defy the Odds</b></i>.</div>
         </div>
-    </div>    
+    </div>
     
-    <div class="footer bg-light">
-        <div class="inspirational-quote">
+    <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+            <div class="slider__inner">
+              <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                <p class="slider__txt">“You have to build calluses on your brain just like how you build calluses on your hands. Callus your mind through pain and suffering.”</p>
+                <footer class="blockquote-footer">David Goggins</footer>
+            </div>
+              <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                <h2 class="slider__caption">newspaper-o</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+              <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                <h2 class="slider__caption">television</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+              <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                <h2 class="slider__caption">diamond</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+            </div>
+          </div>
+              
+    <div class="footer bg-dark text-center">
+        <div class="inspirational-quote text-white">
             <i>"<b>To Grow in Life, Be Willing to Suffer</b>"</i>
-            - David Goggins
+            <p class="text-white">- David Goggins</p>
         </div>
-        <p>David Goggins has a <a href="https://davidgoggins.com/" id="tribute-link" target="_blank">personal website</a> where you can inform yourself of books and seminars he's taking part of,
+        <p class="text-white">David Goggins has a <a href="https://davidgoggins.com/" id="tribute-link" target="_blank">personal website</a> where you can inform yourself of books and seminars he's taking part of,
         and follow him on <a href="https://www.instagram.com/davidgoggins/" target="_blank">Instagram</a> and <a href="https://www.facebook.com/iamdavidgoggins" target="_blank"> Facebook </a>for constant motivation. 💪</p>
     </div>
 
