@@ -1,6 +1,7 @@
 #title {
     text-align: center !important;
-    color: white;
+    color: #2d3436 !important;
+    background-color: #dfe6e9 !important;
 }
 
 #subtitle {
@@ -11,6 +12,7 @@
 
 #img-div {
     padding: 10px 30px 10px 30px;
+    background-color: #dfe6e9 !important; 
 }
 
 #image {
@@ -46,11 +48,14 @@
 .inspirational-quote {
     text-align: center;
     padding: 40px;
+    color: #2d3436 !important;
 }
 
 .footer {
     margin-top: 20px;
     padding: 50px;
+    background-color: #dfe6e9 !important;
+    color: #2d3436 !important;
 }
 
 .animated {
@@ -114,4 +119,8 @@ iframe {
     max-width: 100%;
     align-content: center !important;
     text-align: center !important;
+}
+
+.brain-quote-img {
+    margin-bottom: 40px;
 }
