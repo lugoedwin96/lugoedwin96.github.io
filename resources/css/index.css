@@ -1,6 +1,7 @@
 #title {
     text-align: center !important;
-    color: white;
+    color: #2d3436 !important;
+    background-color: #dfe6e9 !important;
 }
 
 #subtitle {
@@ -11,12 +12,12 @@
 
 #img-div {
     padding: 10px 30px 10px 30px;
+    background-color: #dfe6e9 !important; 
 }
 
 #image {
-    display: block;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -28,10 +29,10 @@
     text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 100px;
+#video-caption {
+    font-size: 13px;
+    text-align: center;
+    border: 10px solid white;
 }
 
 .timeline-item {
@@ -46,10 +47,80 @@
 
 .inspirational-quote {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    color: #2d3436 !important;
 }
 
 .footer {
     margin-top: 20px;
     padding: 50px;
+    background-color: #dfe6e9 !important;
+    color: #2d3436 !important;
+}
+
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.fadeIn {
+    -webkit-animation-name: 'fadeIn';
+    animation-name: 'fadeIn';
+}
+
+iframe {
+    flex-direction: row;
+    width: 100%;
+    flex: 2;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+}
+
+@media (max-width: 900px) {
+    .flex-container {
+        display: block;
+    }
+}
+
+@media (min-width: 901px) {
+    .time-line-container {
+        flex-grow: 2;
+        width: 20%;
+    }
+}
+
+.video-container {
+    flex: 3;
+    flex-direction: row;
+}
+
+.time-line-container {
+    flex-grow: 2;
+    max-width: 100%;
+    align-content: center !important;
+    text-align: center !important;
+}
+
+.brain-quote-img {
+    margin-bottom: 40px;
 }
